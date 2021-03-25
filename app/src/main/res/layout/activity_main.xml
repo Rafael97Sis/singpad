@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/campo_SignatureView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="#D36060"
+        android:visibility="visible"
+        sign:enableSignature="true"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintHorizontal_bias="0.514"
+        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintTop_toBottomOf="@+id/textView11"
+        sign:penColor="#000"
+        sign:penSize="5dp"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/Titulo01"
+        android:layout_width="523dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:text="TERMO DE CONSENTIMENTO DE COLETA DE DADOS"
+        android:textSize="22sp"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="       Este Termo Tem por finalidade registrar a manifestação livre, informada e inequivocada pela qual o titular concorda com o termo de seus dados pessoais para finalidade especifica, em conformidade com a Lei N 13.709 - Lei Geral de proteção de dados Pessoais (LGPD). Ao aceitar o presente termo, manifesta-se o consentimento de que a empresa Arcom S/A, inscrita no CNPJ sob o N° 25.769.266/0001-24, determina os seguintes dados pessoais do Visitante:"
+        android:textSize="19sp"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintHorizontal_bias="0.571"
+        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintTop_toBottomOf="@+id/Titulo01" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        sign:layout_constraintStart_toStartOf="@+id/textView8"
+        sign:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editCPF"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        sign:layout_constraintStart_toStartOf="@+id/editNome"
+        sign:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="    Estes dados tem por finalidade unica o registro de acesso do individuo na portaria da empresa, colaborando nas medidas de
+ segurança interna adotadas por esta sociedade de empresa. Os dados sao näo serão compartilhados com outras empresas, permanecendo arquivos no banco
+ de dados da Arcom S/A seguindo os protocolos de seguranca necessarios para a garantia de não violacao das informacões existentes.
+        "
+        android:textSize="19sp"
+        sign:layout_constraintStart_toStartOf="@+id/editCPF"
+        sign:layout_constraintTop_toBottomOf="@+id/editCPF" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Assim, pela ciencia dos Termos deste documento, a Assinatura respresenta a concordancia com informacões prestadas"
+        android:textSize="19sp"
+        sign:layout_constraintEnd_toEndOf="@+id/textView10"
+        sign:layout_constraintHorizontal_bias="0.7"
+        sign:layout_constraintStart_toStartOf="@+id/textView10"
+        sign:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/image_View"
+        android:layout_width="0dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="TODO"
+        sign:layout_constraintBottom_toTopOf="@+id/textView10"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintHorizontal_bias="1.0"
+        sign:layout_constraintStart_toEndOf="@+id/editNome"
+        sign:layout_constraintTop_toBottomOf="@+id/textView8"
+        sign:layout_constraintVertical_bias="0.714"
+        sign:srcCompat="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assinatura no Espaco em Branco"
+        sign:layout_constraintBottom_toBottomOf="parent"
+        sign:layout_constraintEnd_toEndOf="@+id/campo_SignatureView"
+        sign:layout_constraintHorizontal_bias="0.47"
+        sign:layout_constraintStart_toStartOf="@+id/campo_SignatureView"
+        sign:layout_constraintTop_toBottomOf="@+id/campo_SignatureView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="NOME:"
+        sign:layout_constraintStart_toStartOf="@+id/textView8"
+        sign:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="CPF:"
+        sign:layout_constraintStart_toStartOf="@+id/editNome"
+        sign:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

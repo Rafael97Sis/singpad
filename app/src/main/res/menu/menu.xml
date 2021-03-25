@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <item
+            android:id="@+id/menu_gerar_pdf"
+            app:showAsAction="always"
+            android:icon="@drawable/icon_pdf"
+            android:title="Gerar-pdf "
+        />
+        <item android:id="@+id/menu_gerar_foto"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_photo_camera"
+            android:title=""
+            android:onClick="onOptionsItemSelected"
+        />
+        <item android:id="@+id/menu_apaga_assinatura"
+            app:showAsAction="always"
+
+            android:title="Apaga-Assinatura"
+            />
+        <item android:id="@+id/menu_apaga_dados"
+            app:showAsAction="always"
+
+            android:title="Apaga Dados"
+            />
+</menu>
